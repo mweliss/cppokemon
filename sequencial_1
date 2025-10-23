@@ -1,0 +1,28 @@
+
+#include <iostream>
+
+//antes da main, vou criar a estrutura da lista estática em c++
+
+    int buscaSequencial(std::string vetor[], int tamanho, std::string valor) {
+    
+    for (int i=0; i < tamanho; i++){ //contador
+        if (vetor[i] == valor) // se o vetor for igual ao valor que o usuário pediu
+        return i; //retorna indice se encontrado (posição onde o valor está)
+        
+        }
+        return -1; //não encontrado
+    }
+
+int main(){
+ 
+    std::string vetor[]= {"pikachu", "bulbassauro", "piplup", "mewtwo", "eevee", "jigglypuff"}; // vetor de números aleatórios
+    std::string valor = "piplup"; //aqui, eu mesma digo que é 15
+    int pos = buscaSequencial(vetor, 6, valor); // pos(ição), busca sequencial, vetor, 6 números, valor
+ 
+    if(pos != -1) // se a posição for diferente de -1(ou seja, número positivo)
+    std::cout << "Valor: " << valor << "encontrado na posicao: " << pos << ".\n";//printe o valor
+    else//caso não(caso seja negativo)
+    std::cout << "Valor não encontrado.\n";//o valor é inválido
+    
+    return 0;
+}
