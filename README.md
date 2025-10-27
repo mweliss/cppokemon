@@ -1,2 +1,2 @@
-# cppokemon
-Exercícios usando Algoritmos de Busca Sequencial com tema de Pokémon! (Pra ficar mais divertido).
+# Algoritmos de Busca
+Exercícios usando Algoritmos de Busca Sequencial, Binária e Hash na linguagem C++, com intuito de prática.
