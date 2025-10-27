@@ -1,0 +1,28 @@
+#include <iostream>
+
+//antes da main, vou criar a estrutura da lista estática em c++
+
+int buscaSequencial(int vetor[], int tamanho, int valor){
+    for (int i = 0; i < tamanho; i++){
+        if (vetor[i] == valor)
+        return i; //retorna índice se encontrado
+    }
+    return -1; // não encontrado
+    
+}
+
+int main()
+{
+    int vetor [] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+    int valor = 2;
+    int pos = buscaSequencial(vetor, 9, valor);
+    
+    if (pos != -1)
+    
+        std::cout <<"Valor: " << valor << " encontrado na posição " << pos << ".\n";
+    else
+        std::cout <<"Valor não encontrado.\n";
+        
+    
+    return 0;
+}
